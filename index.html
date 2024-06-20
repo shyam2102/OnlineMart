@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>onlineMart</title>
+
+
+    <script src="https://kit.fontawesome.com/2518944293.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <section class="title-section" id="title">
+
+    <!-- Nav Bar -->
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="nav-link navbar-brand" href="index.html">
+            <img src="Images/title.png" alt="title-img" class="title-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collpase navbar-collapse list" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-target="#signup" data-toggle="modal">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-target="#login" data-toggle="modal">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+
+        <div class="container-fluid row">
+          <div class="col-lg-6">
+            <h1 class="title-heading">Do shop at your best rates.</h1>
+          </div>
+          <div class="col-lg-6">
+            <img class="cover-img" src="Images/mart.jpg" alt="cover">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="body-section">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 ">
+          <a style="text-decoration :none" href="menfashion.html">
+            <img class="category" src="Images/Men fashion.jpg" alt="">
+            <h6>Men's Fashion</h6>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a style="text-decoration :none" href="womenfashion.html">
+            <img class="category" src="Images/Women fashion.jpeg" alt="">
+            <h6>Women's Fashion</h6>
+          </a>
+        </div>
+        <div class=" col-lg-3 col-md-6">
+          <a style="text-decoration :none" href="#">
+            <img class="category" src="Images/mobiles.jpg" alt="">
+            <h6>Mobiles and Accessoriess</h6>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a style="text-decoration :none" href="laptop.html">
+            <img class="category" src="Images/Laptop.jpg" alt="">
+            <h6>Laptops</h6>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="sign-section">
+
+      <div class="modal fade signin" id="signup" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button data-dismiss="modal" class="close">&times;</button>
+              <form class="signup-form" action="http://localhost:8000/login" method="post">
+                <h1>Create Account</h1>
+                <input class="inputbox" type="text" name="FName" value="" placeholder="First Name"><br>
+                <input class="inputbox" type="text" name="LName" value="" placeholder="Last Name"><br>
+                <input class="inputbox" type="email" name="email" value="" placeholder="E-Mail"><br>
+                <input class="inputbox" type="text" name="mobile" value="" placeholder="Mobile Number"><br>
+                <input class="inputbox" type="password" name="password" value="" placeholder="Password"><br>
+                <p><span><input type="checkbox" name="" value=""> </span>I agree to the terms of services</p>
+                <input class="btn btn-sign" type="submit" value="Signup" name="login"/>
+                <hr style="background-color:#fff;">
+                <p>Do you have an account? <a href="#" data-target="#login" data-toggle="modal" data-dismiss="modal">LogIn</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade signin" id="login" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button data-dismiss="modal" class="close">&times;</button>
+              <form class="signup-form" action="index.html" method="post">
+                <h1>LogIn</h1>
+                <input class="inputbox" type="email" name="email" value="" placeholder="E-Mail"><br>
+                <input class="inputbox" type="text" name="mobile" value="" placeholder="Mobile Number"><br>
+                <input class="inputbox" type="password" name="password" value="" placeholder="Password"><br>
+                <input class="btn btn-sign" type="submit" value="login"/>
+                <hr style="background-color: #fff;">
+                <p>Don't have an account? <a href="#" data-target="#signup" data-toggle="modal" data-dismiss="modal">SignUp</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="testimonal">
+      <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="">
+              <img src="Images/Testimonials/laptop-cover1.png" class="testimonal-img" alt="">
+            </a>      
+          </div>
+          <div class="carousel-item">
+            <a href="">
+              <img src="Images/Testimonials/laptop-cover2.png" class="testimonal-img" alt="">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="">
+              <img src="Images/Testimonials/laptop-cover3.png" class="testimonal-img" alt="">
+            </a>
+            
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+
+    <section class="mobile-section">
+      <a href="">
+        <img src="Images\mobile-cover.jpg" alt="" class="mobile-cover">
+      </a>
+    </section>
+
+    <section>
+      <div class="">
+        <a href="">
+          <img src="Images/Testimonials/headset-cover.png" alt="" class="headset-cover">
+        </a>
+      </div>
+    </section>
+
+
+
+    <footer class="footer-section "id="footer">
+      <div class="row">
+        <div class="col-lg-6" style="text-align: left;">
+          <h5>FIND US</h5>
+          <h6>12,Rajiv Ganghi Salai,</h6>
+          <h6>Chennai-28.</h6>
+        </div>
+        <div class="col-lg-6">
+         
+        </div>
+      </div>
+
+      <div>
+        <a href="https://www.facebook.com/"><i class="social-icon fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.instagram.com/?hl=en"><i class="social-icon fab fa-instagram-square fa-2x"></i></a>
+        <a href="mailto:praveencr707@gmail.com"><i class="social-icon fas fa-envelope fa-2x"></i></a>
+        <p class="rights">© 2020 OnlineMart. All rights reserved.</p>
+      </div>
+
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+
+
+  </body>
+
+
+</html>

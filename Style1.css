@@ -1,0 +1,60 @@
+body{
+  text-align: center;
+  background-color: #f2dcbb;
+}
+
+.body-section{
+  text-align: center;
+  width: 50%;
+}
+
+legend{
+  font-size: large;
+  font-weight: bold;
+}
+
+.img-cgpa{
+  float: right;
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+
+fieldset{
+  border: 0;
+}
+
+
+.inputbox{
+  width: 60%;
+  height: 30px;
+  font-size: medium;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  margin-bottom: 10px;
+  font-weight: bolder;
+
+}
+
+.inputbox:focus {
+  outline: none;
+}
+
+button{
+  padding: 6px 20px;
+  border-radius: 20px;
+  background: none;
+  border: 2px solid  #c75643;
+  color:  #c75643;
+  font-weight: bold;
+  margin-top: 1em;
+  outline: none;
+}
+
+button:hover{
+  background-color:  #ec5858;
+  color: #000;
+
+}
